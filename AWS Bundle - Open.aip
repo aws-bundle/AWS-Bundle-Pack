@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="17.0" version="17.0" Modules="architect" RootPath="." Language="en" Id="{840EA870-4FE8-493E-A1C7-A90784CCFC34}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;ActSyncAppComponent;FixupComponent;MsiXDiffComponent;MsixManifestEditorComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_COLOR_DISABLED_TEXT" Value="3026478" MultiBuildValue="DefaultBuild:15461355" MsiKey="AI_COLOR_DISABLED_TEXT"/>
+    <ROW Property="AI_CONTROL_VISUAL_STYLE" Value="2960685;4276545;6776679;16176031" MultiBuildValue="DefaultBuild:16777215;15464703;42495;5161471" MsiKey="AI_CONTROL_VISUAL_STYLE"/>
+    <ROW Property="AI_CONTROL_VISUAL_STYLE_EX" Value="1513239;3026478;3026478" MultiBuildValue="DefaultBuild:42495;42495;42495" MsiKey="AI_CONTROL_VISUAL_STYLE_EX"/>
+    <ROW Property="AI_CONTROL_VISUAL_STYLE_FLAT" MultiBuildValue="DefaultBuild:15464703;15464703;42495;5161471" MsiKey="AI_CONTROL_VISUAL_STYLE_FLAT"/>
+    <ROW Property="AI_EXTERNALUIUNINSTALLERNAME" MultiBuildValue="DefaultBuild:aiui"/>
+    <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
+    <ROW Property="AI_FrameBtnsColor" Value="metroblack" MultiBuildValue="DefaultBuild:metroorange" MsiKey="AI_FrameBtnsColor"/>
+    <ROW Property="AI_FrameColor" Value="metroblack" MultiBuildValue="DefaultBuild:metroorange" MsiKey="AI_FrameColor"/>
+    <ROW Property="AI_PREDEF_LCONDS_PROPS" Value="AI_DETECTED_INTERNET_CONNECTION;AI_DETECTED_ADMIN_USER"/>
+    <ROW Property="AI_PRODUCTNAME_ARP" Value="AWS Bundle Pack"/>
+    <ROW Property="AI_ThemeStyle" Value="default" MultiBuildValue="DefaultBuild:metroorange" MsiKey="AI_ThemeStyle"/>
+    <ROW Property="AI_UNINSTALLER" Value="msiexec.exe"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPNOREPAIR" Value="1" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPPRODUCTICON" Value="awsappicon.exe" Type="8"/>
+    <ROW Property="ARPSYSTEMCOMPONENT" Value="1"/>
+    <ROW Property="AiFeatIcoMainFeature" Value="awsappicon.exe" Type="8"/>
+    <ROW Property="AiPreferFastOem" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="COMPONENT_LIST" Value="AWSCLI,PSTOOLS,SCOUT_SUITE,C7N,AWS_SHELL,SAWS,ATHENA_CLI,JUNGLE,SCEPTRE,AWS_LOGS,PYTHON38,S3BROWSER,GIMEL,KAPPA,REDSHIFT_CONSOLE,S4CMD,YAS3FS"/>
+    <ROW Property="Manufacturer" Value="Bundle Pack"/>
+    <ROW Property="ProductCode" Value="1033:{C48AB097-1B1E-4741-9C03-B304809FC3D6} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="AWS Bundle Pack"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
+    <ROW Property="UpgradeCode" Value="{31CEE8AC-EB81-4603-B5DF-D1426D7A364B}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="ProgramMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="PROGRA~1|ProgramMenuFolder" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_CustomARPName" ComponentId="{76C947ED-F9F6-4D12-9133-C98238552026}" Directory_="APPDIR" Attributes="4" KeyPath="DisplayName" Options="1"/>
+    <ROW Component="AI_ExePath" ComponentId="{E3276F04-681E-452A-8F4E-1B26E8C560B7}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
+    <ROW Component="APPDIR" ComponentId="{F5A2FF0E-2E2E-4810-8F8B-D1A23F611B9A}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="ProductInformation" ComponentId="{8BE6DCB4-B4C5-489B-AF15-9E077303D29D}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="RequiredApplication_1" ComponentId="{83045F0C-6618-413D-9B0C-07E8FD845C9B}" Directory_="APPDIR" Attributes="4" KeyPath="RequiredApplication_1" Options="2"/>
+    <ROW Component="RequiredApplication_2" ComponentId="{FE29E372-731B-4E5C-9BC7-09FAAF2F7E3F}" Directory_="APPDIR" Attributes="4" KeyPath="RequiredApplication_2" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ROW Feature="RequiredApplication_1" Title="Python 3.8.4" Description="Python 3.8.4" Display="5" Level="4" Attributes="0"/>
+    <ROW Feature="RequiredApplication_2" Title="S3 Browser" Description="S3 Browser" Display="3" Level="4" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
+    <ROW Action="AI_DetectSoftware" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" Languages="en" InstallationType="2" CabsLocation="1" CompressCabs="false" UseLzma="true" LzmaMethod="2" LzmaCompressionLevel="4" PackageType="1" FilesInsideExe="true" ExeIconPath="..\aws-app-icon.ico" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true" UACExecutionLevel="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="InstallDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\InstallDlg.aip"/>
+    <ROW Fragment="LicenseAgreementDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\LicenseAgreementDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="PreparePrereqDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\PreparePrereqDlg.aip"/>
+    <ROW Fragment="ProgressPrereqDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\ProgressPrereqDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;surface\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;surface\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomePrereqDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\WelcomePrereqDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_ConfigureChainer" Description="Configuring prerequisites launcher" DescriptionLocId="ActionText.Description.AI_ConfigureChainer" Template="Configure Launcher" TemplateLocId="ActionText.Template.AI_ConfigureChainer"/>
+    <ROW Action="AI_DeleteLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DownloadPrereq" Description="Downloading prerequisite software" DescriptionLocId="ActionText.Description.AI_DownloadPrereq" Template="Downloading [1]{[2] completed}" TemplateLocId="ActionText.Template.AI_DownloadPrereq"/>
+    <ROW Action="AI_ExtractFiles" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractPrereq" Description="Extracting prerequisite software" DescriptionLocId="ActionText.Description.AI_ExtractPrereq" Template="Extracting [1]{[2] completed}" TemplateLocId="ActionText.Template.AI_ExtractPrereq"/>
+    <ROW Action="AI_InstallPostPrerequisite" Description="Installing prerequisite software" DescriptionLocId="ActionText.Description.AI_InstallPrerequisite" Template="Installing [1]{[2] completed}" TemplateLocId="ActionText.Template.AI_InstallPrerequisite"/>
+    <ROW Action="AI_InstallPrerequisite" Description="Installing prerequisite software" DescriptionLocId="ActionText.Description.AI_InstallPrerequisite" Template="Installing [1]{[2] completed}" TemplateLocId="ActionText.Template.AI_InstallPrerequisite"/>
+    <ROW Action="AI_VerifyPrereq" Description="Verifying prerequisites" DescriptionLocId="ActionText.Description.AI_VerifyPrereq" Template="[1] was not installed correctly." TemplateLocId="ActionText.Template.AI_VerifyPrereq"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_LM" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_CU" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="ExternalUICleaner.dll" SourcePath="&lt;AI_CUSTACTS&gt;ExternalUICleaner.dll"/>
+    <ROW Name="PowerShellScriptLauncher.dll" SourcePath="&lt;AI_CUSTACTS&gt;PowerShellScriptLauncher.dll"/>
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="SoftwareDetector.dll" SourcePath="&lt;AI_CUSTACTS&gt;SoftwareDetector.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="aipackagechainer.exe" SourcePath="&lt;AI_CUSTACTS&gt;aipackagechainer.exe"/>
+    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
+    <ROW Name="viewer.exe" SourcePath="&lt;AI_CUSTACTS&gt;viewer.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiConditionComponent">
+    <ROW Feature_="RequiredApplication_2" Level="1" Condition="COMPONENT_LIST &gt;&lt; &quot;S3BROWSER&quot;"/>
+    <ROW Feature_="RequiredApplication_1" Level="1" Condition="COMPONENT_LIST &gt;&lt; &quot;PYTHON38&quot;"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="CustomizeDlg" Control="CustomizeDlgDialogInitializer" Type="DialogInitializer" X="0" Y="0" Width="0" Height="0" Attributes="0" Order="-1" TextLocId="-" HelpLocId="-" ExtDataLocId="-"/>
+    <ROW Dialog_="FeatureSelectionDlg" Control="Cancel" Type="ImageButton" X="163" Y="359" Width="78" Height="28" Attributes="2" Text="[NextCancelButtons]" TextStyle="[MetroButtonText]" Order="100" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="FeatureSelectionDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="345" Height="400" Attributes="1" Text="[Background]" Order="200"/>
+    <ROW Dialog_="FeatureSelectionDlg" Control="Next" Type="ImageButton" X="251" Y="359" Width="78" Height="28" Attributes="3" Text="[NextCancelButtons]" TextStyle="[MetroButtonText]" Order="300" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Next]" ExtDataLocId="-"/>
+    <ROW Dialog_="FeatureSelectionDlg" Control="Back" Type="ImageButton" X="17" Y="359" Width="78" Height="28" Attributes="3" Text="[BackButton]" TextStyle="[MetroButtonText]" Order="400" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Back]" ExtDataLocId="-"/>
+    <ROW Dialog_="FeatureSelectionDlg" Control="SubTitle" Type="Text" X="17" Y="105" Width="312" Height="18" Attributes="196611" Text="Customize Your Installation" TextStyle="[SubTitleStyle]" Order="500"/>
+    <ROW Dialog_="FeatureSelectionDlg" Control="ProductNameTitle" Type="Text" X="83" Y="21" Width="245" Height="50" Attributes="196611" Text="[ProductName]" TextStyle="[ProductNameForSplash]" Order="600"/>
+    <ROW Dialog_="FeatureSelectionDlg" Control="CompanyText" Type="Text" X="83" Y="16" Width="191" Height="12" Attributes="196611" Text="[Manufacturer]" TextStyle="[ManufacturerFont]" Order="700"/>
+    <ROW Dialog_="FeatureSelectionDlg" Control="ProductLogo" Type="Bitmap" X="17" Y="5" Width="59" Height="63" Attributes="1" Text="[AppLogoIcon]" Order="800"/>
+    <ROW Dialog_="FeatureSelectionDlg" Control="AdvInst" Type="Text" X="5" Y="388" Width="74" Height="11" Attributes="196611" Text="Advanced Installer" TextStyle="[BrandingStyle]" Order="900"/>
+    <ROW Dialog_="FeatureSelectionDlg" Control="CheckList_1" Type="CheckList" X="17" Y="135" Width="311" Height="209" Attributes="3" Property="COMPONENT_LIST" Text="CheckList" Order="1000" ExtType="CheckList"/>
+    <ROW Dialog_="MsiRMFilesInUse" Control="Cancel" Type="ImageButton" X="163" Y="359" Width="78" Height="28" Attributes="2" Text="[NextCancelButtons]" TextStyle="[MetroButtonText]" Order="100" MsiKey="MsiRMFilesInUse#Cancel" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="PatchWelcomeDlgDialogInitializer" Type="DialogInitializer" X="0" Y="0" Width="0" Height="0" Attributes="0" Order="-1" TextLocId="-" HelpLocId="-" ExtDataLocId="-"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="ProductNameTitle" Type="Text" X="83" Y="21" Width="245" Height="50" Attributes="196611" Text="[ProductName]" TextStyle="[ProductNameForSplash]" Order="600" TextLocId="Metro.Control.Text.ProductName" MsiKey="PatchWelcomeDlg#ProductNameTitle"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="CompanyText" Type="Text" X="83" Y="16" Width="191" Height="12" Attributes="196611" Text="[Manufacturer]" TextStyle="[ManufacturerFont]" Order="700" TextLocId="Metro.Control.Text.Manufacturer" MsiKey="PatchWelcomeDlg#CompanyText"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="ProductLogo" Type="Bitmap" X="17" Y="5" Width="59" Height="63" Attributes="1" Text="[AppLogoIcon]" Order="800" MsiKey="PatchWelcomeDlg#ProductLogo"/>
+    <ROW Dialog_="PreparePrereqDlg" Control="ProgressAnimation" Type="Bitmap" X="123" Y="83" Width="113" Height="30" Attributes="1048577" Text="PreparePrereqDlgProgress.gif" Order="800" MsiKey="PreparePrereqDlg#ProgressAnimation"/>
+    <ROW Dialog_="ProgressPrereqDlg" Control="ActionText" Type="Text" X="17" Y="191" Width="309" Height="11" Attributes="196611" TextStyle="SubnoteFont" Order="800" MsiKey="ProgressPrereqDlg#ActionText"/>
+    <ROW Dialog_="ProgressPrereqDlg" Control="ProgressBar" Type="StyledProgressBar" X="17" Y="185" Width="312" Height="5" Attributes="65537" Text="PrereqProgressImage.png" Order="900" MsiKey="ProgressPrereqDlg#ProgressBar" ExtType="StyledProgressBar"/>
+    <ROW Dialog_="ProgressPrereqDlg" Control="StatusLabel" Type="Text" X="17" Y="171" Width="45" Height="13" Attributes="196611" Text="Status:" TextStyle="SubnoteFont" Order="1000" TextLocId="Control.Text.ProgressDlg#StatusLabel" MsiKey="ProgressPrereqDlg#StatusLabel"/>
+    <ROW Dialog_="ProgressPrereqDlg" Control="Text" Type="Text" X="17" Y="105" Width="300" Height="30" Attributes="196611" Text="Please wait while the [Wizard] [Progress2] prerequisites for [ProductName].  This may take several minutes." Order="1100" TextLocId="Control.Text.ProgressPrereqDlg#Text" MsiKey="ProgressPrereqDlg#Text"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="Cancel" Type="ImageButton" X="163" Y="359" Width="78" Height="28" Attributes="2" Text="[NextCancelButtons]" TextStyle="[MetroButtonText]" Order="100" MsiKey="VerifyReadyDlg#Cancel" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="Back" Type="PushButton" X="5" Y="381" Width="11" Height="11" Attributes="2" Text="Control.Text.VerifyReadyDlg#Back" Help="Back|" Order="200" TextLocId="Control.Text.VerifyReadyDlg#Back" HelpLocId="Air.Control.Help#Back" MsiKey="VerifyReadyDlg#Back" Options="1" ExtType="PushButton" ExtData="[ButtonText_Back]" ExtDataLocId="-"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="ReadyToInstall" Type="Text" X="17" Y="105" Width="312" Height="19" Attributes="196611" Text="Ready to Install" TextStyle="[SubTitleStyle]" Order="400" TextLocId="Control.Text.VerifyReadyDlg#Title" MsiKey="VerifyReadyDlg#ReadyToInstall"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="Text_2" Type="Text" X="17" Y="139" Width="312" Height="100" Attributes="65539" Text="The [Wizard] is ready to begin the [ProductName] installation" Order="500" TextLocId="Control.Text.VerifyReadyDlg#Description" MsiKey="VerifyReadyDlg#Text_2"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="InstallButton" Type="ImageButton" X="251" Y="359" Width="78" Height="28" Attributes="3" Text="[metrobuttonimage]" TextStyle="[MetroButtonText]" Order="600" MsiKey="VerifyReadyDlg#InstallButton" ExtType="ImageButton" ExtData="INSTALL" ExtDataLocId="Metro.Control.ExtData.VerifyReadyDlg#InstallButton"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="ProductNameTitle" Type="Text" X="83" Y="21" Width="245" Height="50" Attributes="196611" Text="[ProductName]" TextStyle="[ProductNameForSplash]" Order="700" TextLocId="Metro.Control.Text.ProductName" MsiKey="VerifyReadyDlg#ProductNameTitle"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="CompanyText" Type="Text" X="83" Y="16" Width="191" Height="12" Attributes="196611" Text="[Manufacturer]" TextStyle="[ManufacturerFont]" Order="800" TextLocId="Metro.Control.Text.Manufacturer" MsiKey="VerifyReadyDlg#CompanyText"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="ProductLogo" Type="Bitmap" X="17" Y="5" Width="59" Height="63" Attributes="1" Text="[AppLogoIcon]" Order="900" MsiKey="VerifyReadyDlg#ProductLogo"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="AdvInst" Type="Text" X="5" Y="388" Width="74" Height="11" Attributes="196611" Text="Advanced Installer" TextStyle="[BrandingStyle]" Order="1000" MsiKey="VerifyReadyDlg#AdvInst"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control="Cancel" Type="ImageButton" X="163" Y="359" Width="78" Height="28" Attributes="2" Text="[NextCancelButtons]" TextStyle="[MetroButtonText]" Order="100" MsiKey="VerifyRemoveDlg#Cancel" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="VerifyRepairDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="345" Height="400" Attributes="1" Text="[Background]" Order="100" MsiKey="VerifyRepairDlg#Bitmap"/>
+    <ROW Dialog_="VerifyRepairDlg" Control="Cancel" Type="ImageButton" X="163" Y="359" Width="78" Height="28" Attributes="2" Text="[NextCancelButtons]" TextStyle="[MetroButtonText]" Order="200" MsiKey="VerifyRepairDlg#Cancel" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="WelcomePrereqDlg" Control="Description" Type="Text" X="17" Y="139" Width="312" Height="211" Attributes="196611" Text="The setup has determined that some of the prerequisites needed to run [ProductName] are missing. This wizard will assist you in getting and installing those prerequisites. Click &quot;[Text_Next]&quot; to continue or &quot;[ButtonText_Cancel]&quot; to exit the [Wizard]." Order="800" TextLocId="Control.Text.WelcomePrereqDlg#Description" MsiKey="WelcomePrereqDlg#Description"/>
+    <ROW Dialog_="WelcomePrereqDlg" Control="SubTitle" Type="Text" X="17" Y="105" Width="312" Height="34" Attributes="196611" Text="Welcome to the Prerequisites [Wizard]" TextStyle="[SubTitleStyle]" Order="900" TextLocId="Control.Text.WelcomePrereqDlg#SubTitle" MsiKey="WelcomePrereqDlg#SubTitle"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomePrereqDlg" Control_="Next" Event="NewDialog" Argument="FeatureSelectionDlg" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
+    <ROW Dialog_="InstallDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="301"/>
+    <ROW Dialog_="InstallDlg" Control_="YouMustAgreeCtrl" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="301"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="NewDialog" Argument="InstallDlg" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="1"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="101"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="699"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="199" Options="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="699"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Modify" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="99"/>
+    <ROW Dialog_="InstallDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_INSTALL AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="302" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="Next" Event="EnableRollback" Argument="False" Condition="AI_INSTALL AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="303" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_INSTALL AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="304" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="InstallDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_INSTALL" Ordering="101" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="InstallDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_INSTALL" Ordering="102" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="InstallDlgDialogInitializer" Event="[AI_Text_Next_Orig]" Argument="[Text_Next]" Condition="AI_INSTALL" Ordering="103" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="InstallDlgDialogInitializer" Event="[Text_Next]" Argument="[Text_Install]" Condition="AI_INSTALL" Ordering="104" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="YouMustAgreeCtrl" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_INSTALL" Ordering="302" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="YouMustAgreeCtrl" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_INSTALL" Ordering="303" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="Back" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_INSTALL" Ordering="0" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="Back" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_INSTALL" Ordering="1" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_INSTALL AND AiLicenseAgreement AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="102" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="EnableRollback" Argument="False" Condition="AI_INSTALL AND AiLicenseAgreement AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="103" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_INSTALL AND AiLicenseAgreement AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="104" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="LicenseAgreementDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="101" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="LicenseAgreementDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="102" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="LicenseAgreementDlgDialogInitializer" Event="[AI_Text_Next_Orig]" Argument="[Text_Next]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="103" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="LicenseAgreementDlgDialogInitializer" Event="[Text_Next]" Argument="[Text_Install]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="104" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="2" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="3" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Modify" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_MAINT AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="102" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Modify" Event="EnableRollback" Argument="False" Condition="AI_MAINT AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="103" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Modify" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_MAINT AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="104" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="CustomizeDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_MAINT" Ordering="0" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="CustomizeDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_MAINT" Ordering="1" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="CustomizeDlgDialogInitializer" Event="[AI_Text_Next_Orig]" Argument="[Text_Next]" Condition="AI_MAINT" Ordering="2" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="CustomizeDlgDialogInitializer" Event="[Text_Next]" Argument="[Text_Install]" Condition="AI_MAINT" Ordering="3" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_MAINT" Ordering="2" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_MAINT" Ordering="3" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_PATCH AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="202" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="EnableRollback" Argument="False" Condition="AI_PATCH AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="203" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_PATCH AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="204" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_PATCH" Ordering="0" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_PATCH" Ordering="1" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[AI_Text_Next_Orig]" Argument="[Text_Next]" Condition="AI_PATCH" Ordering="2" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[Text_Next]" Argument="[Text_Install]" Condition="AI_PATCH" Ordering="3" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Back" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_PATCH" Ordering="0" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Back" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_PATCH" Ordering="1" Options="2"/>
+    <ROW Dialog_="ExitDialog" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="101"/>
+    <ROW Dialog_="FatalError" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="201"/>
+    <ROW Dialog_="UserExit" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="101"/>
+    <ROW Dialog_="FeatureSelectionDlg" Control_="Cancel" Event="SpawnDialog" Argument="CancelDlg" Condition="1" Ordering="100"/>
+    <ROW Dialog_="FeatureSelectionDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
+    <ROW Dialog_="FeatureSelectionDlg" Control_="Back" Event="NewDialog" Argument="WelcomePrereqDlg" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_AppSearchEx" Type="1" Source="Prereq.dll" Target="DoAppSearchEx"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ChooseTextStyles" Type="1" Source="aicustact.dll" Target="ChooseTextStyles"/>
+    <ROW Action="AI_CleanPrereq" Type="65" Source="Prereq.dll" Target="CleanPrereq" WithoutSeq="true"/>
+    <ROW Action="AI_ConfigureChainer" Type="1" Source="Prereq.dll" Target="ConfigurePrereqLauncher"/>
+    <ROW Action="AI_DATA_SETTER" Type="51" Source="AI_ExtractFiles" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DATA_SETTER_1" Type="51" Source="AWSTools" Target="AEkAcwA2ADQAQgBpAHQAAgABAEkAcwBGAGEAbABsAGIAYQBjAGsAMwAyAEIAaQB0AAIAAQBQAGEAcgBhAG0AcwACAAEAUwBjAHIAaQBwAHQAAgAjACAAQgBsAG8AYwBrACAAZgBvAHIAIABkAGUAYwBsAGEAcgBpAG4AZwAgAHQAaABlACAAcwBjAHIAaQBwAHQAIABwAGEAcgBhAG0AZQB0AGUAcgBzAC4ADQAKAFAAYQByAGEAbQAoACkADQAKAA0ACgAjACAAWQBvAHUAcgAgAGMAbwBkAGUAIABnAG8AZQBzACAAaABlAHIAZQAuAA0ACgANAAoASQBuAHMAdABhAGwAbAAtAFAAYQBjAGsAYQBnAGUAUAByAG8AdgBpAGQAZQByACAATgB1AEcAZQB0ACAALQBGAG8AcgBjAGUAOwANAAoASQBuAHMAdABhAGwAbAAtAE0AbwBkAHUAbABlACAALQBOAGEAbQBlACAAQQBXAFMALgBUAG8AbwBsAHMALgBJAG4AcwB0AGEAbABsAGUAcgAgAC0ARgBvAHIAYwBlADsADQAKAEkAbgBzAHQAYQBsAGwALQBBAFcAUwBUAG8AbwBsAHMATQBvAGQAdQBsAGUAIABBAFcAUwAuAFQAbwBvAGwAcwAuAFMAMwAsAEEAVwBTAC4AVABvAG8AbABzAC4ARQBDADIALABBAFcAUwAuAFQAbwBvAGwAcwAuAFMAaQBtAHAAbABlAFMAeQBzAHQAZQBtAHMATQBhAG4AYQBnAGUAbQBlAG4AdAAsAEEAVwBTAC4AVABvAG8AbABzAC4AUwBlAGMAcgBlAHQAcwBNAGEAbgBhAGcAZQByACwAQQBXAFMALgBUAG8AbwBsAHMALgBTAGUAYwB1AHIAaQB0AHkAVABvAGsAZQBuACwAQQBXAFMALgBUAG8AbwBsAHMALgBDAGwAbwB1AGQARgBvAHIAbQBhAHQAaQBvAG4ALABBAFcAUwAuAFQAbwBvAGwAcwAuAEMAbwBnAG4AaQB0AG8ASQBkAGUAbgB0AGkAdAB5AFAAcgBvAHYAaQBkAGUAcgAsAEEAVwBTAC4AVABvAG8AbABzAC4ARQBsAGEAcwB0AGkAYwBzAGUAYQByAGMAaAAsAEEAVwBTAC4AVABvAG8AbABzAC4ASQBkAGUAbgB0AGkAdAB5AE0AYQBuAGEAZwBlAG0AZQBuAHQALABBAFcAUwAuAFQAbwBvAGwAcwAuAEEAdQB0AG8AUwBjAGEAbABpAG4AZwAsAEEAVwBTAC4AVABvAG8AbABzAC4ATABhAG0AYgBkAGEALABBAFcAUwAuAFQAbwBvAGwAcwAuAFIAbwB1AHQAZQA1ADMALABBAFcAUwAuAFQAbwBvAGwAcwAuAEUAQwBSACwAQQBXAFMALgBUAG8AbwBsAHMALgBFAGwAYQBzAHQAaQBjAEwAbwBhAGQAQgBhAGwAYQBuAGMAaQBuAGcAVgAyACwAQQBXAFMALgBUAG8AbwBsAHMALgBSAEQAUwAsAEEAVwBTAC4AVABvAG8AbABzAC4ARQBDAFMALABBAFcAUwAuAFQAbwBvAGwAcwAuAFMAUQBTACAALQBDAGwAZQBhAG4AVQBwACAALQBGAG8AcgBjAGUAOw=="/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DetectSoftware" Type="257" Source="SoftwareDetector.dll" Target="OnDetectSoftware"/>
+    <ROW Action="AI_DoRemoveExternalUIStub" Type="3585" Source="ExternalUICleaner.dll" Target="DoRemoveExternalUIStub" WithoutSeq="true"/>
+    <ROW Action="AI_DownloadPrereq" Type="1" Source="Prereq.dll" Target="DownloadPrereq"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_EstimateExtractFiles" Type="1" Source="Prereq.dll" Target="EstimateExtractFiles"/>
+    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ExtractFiles" Type="1025" Source="Prereq.dll" Target="ExtractSourceFiles" AdditionalSeq="AI_DATA_SETTER"/>
+    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
+    <ROW Action="AI_ExtractPrereq" Type="65" Source="Prereq.dll" Target="ExtractPrereq"/>
+    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
+    <ROW Action="AI_GetArpIconPath" Type="1" Source="aicustact.dll" Target="GetArpIconPath"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_InstallPostPrerequisite" Type="1" Source="Prereq.dll" Target="InstallPostPrereq"/>
+    <ROW Action="AI_InstallPrerequisite" Type="1" Source="Prereq.dll" Target="InstallPrereq"/>
+    <ROW Action="AI_LaunchChainer" Type="3314" Source="AI_PREREQ_CHAINER"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_RemoveExternalUIStub" Type="1" Source="ExternalUICleaner.dll" Target="RemoveExternalUIStub"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_RunFinishActions" Type="1" Source="aicustact.dll" Target="RunFinishActions" WithoutSeq="true"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_VerifyPrereq" Type="1" Source="Prereq.dll" Target="VerifyPrereq"/>
+    <ROW Action="AWSTools" Type="3649" Source="PowerShellScriptLauncher.dll" Target="RunPowerShellScript" Options="1" AdditionalSeq="AI_DATA_SETTER_1"/>
+    <ROW Action="Pip_athenacli" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install athenacli" Options="1"/>
+    <ROW Action="Pip_aws_shell" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install aws-shell" Options="1"/>
+    <ROW Action="Pip_awslogs" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install awslogs" Options="1"/>
+    <ROW Action="Pip_cloud_custodian" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install c7n" Options="1"/>
+    <ROW Action="Pip_gimel" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install gimel" Options="1"/>
+    <ROW Action="Pip_jungle" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install jungle" Options="1"/>
+    <ROW Action="Pip_kappa" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install kappa" Options="1"/>
+    <ROW Action="Pip_redshift_console" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install redshift-console" Options="1"/>
+    <ROW Action="Pip_s4cmd" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install s4cmd" Options="1"/>
+    <ROW Action="Pip_saws" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install saws" Options="1"/>
+    <ROW Action="Pip_sceptre" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install sceptre" Options="1"/>
+    <ROW Action="Pip_scoutsuite" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install scoutsuite" Options="1"/>
+    <ROW Action="Pip_yas3fs" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install yas3fs" Options="1"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDialogComponent">
+    <ROW Dialog="FeatureSelectionDlg" HCentering="50" VCentering="50" Width="345" Height="400" Attributes="3" Title="[ProductName] [Setup]" Control_Default="Next" Control_Cancel="Cancel" TitleLocId="Dialog.TemplateDlg"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="AI_CustomARPName"/>
+    <ROW Feature_="MainFeature" Component_="AI_ExePath"/>
+    <ROW Feature_="RequiredApplication_2" Component_="RequiredApplication_2"/>
+    <ROW Feature_="RequiredApplication_1" Component_="RequiredApplication_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="awsappicon.exe" SourcePath="..\aws-app-icon.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1502"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_ConfigureChainer" Condition="((UILevel = 2) OR (UILevel = 3)) AND (NOT UPGRADINGPRODUCTCODE)" Sequence="6597"/>
+    <ROW Action="AI_LaunchChainer" Condition="AI_PREREQ_CHAINER AND (NOT UPGRADINGPRODUCTCODE)" Sequence="6598"/>
+    <ROW Action="AI_AppSearchEx" Sequence="103"/>
+    <ROW Action="AI_DetectSoftware" Sequence="102"/>
+    <ROW Action="AI_VerifyPrereq" Sequence="1101"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99" Builds="DefaultBuild"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
+    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="196" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1549" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractFiles" Sequence="3998" Builds="DefaultBuild"/>
+    <ROW Action="AI_DATA_SETTER" Sequence="3997"/>
+    <ROW Action="AI_EstimateExtractFiles" Sequence="3999" Builds="DefaultBuild"/>
+    <ROW Action="AWSTools" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;PSTOOLS&quot; )" Sequence="6402"/>
+    <ROW Action="AI_DATA_SETTER_1" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;PSTOOLS&quot; )" Sequence="6401"/>
+    <ROW Action="Pip_scoutsuite" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;SCOUT_SUITE&quot; )" Sequence="6403"/>
+    <ROW Action="Pip_cloud_custodian" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;C7N&quot; )" Sequence="6404"/>
+    <ROW Action="Pip_aws_shell" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;AWS_SHELL&quot; )" Sequence="6405"/>
+    <ROW Action="Pip_saws" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;SAWS&quot; )" Sequence="6406"/>
+    <ROW Action="Pip_jungle" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;JUNGLE&quot; )" Sequence="6407"/>
+    <ROW Action="Pip_athenacli" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;ATHENA_CLI&quot; )" Sequence="6408"/>
+    <ROW Action="Pip_sceptre" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;SCEPTRE&quot; )" Sequence="6409"/>
+    <ROW Action="Pip_awslogs" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;AWS_LOGS&quot; )" Sequence="6410"/>
+    <ROW Action="Pip_gimel" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;GIMEL&quot; )" Sequence="6411"/>
+    <ROW Action="Pip_kappa" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;KAPPA&quot; )" Sequence="6412"/>
+    <ROW Action="Pip_redshift_console" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;REDSHIFT_CONSOLE&quot; )" Sequence="6413"/>
+    <ROW Action="Pip_s4cmd" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;S4CMD&quot; )" Sequence="6414"/>
+    <ROW Action="Pip_yas3fs" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;YAS3FS&quot; )" Sequence="6415"/>
+    <ROW Action="AI_GetArpIconPath" Sequence="1401"/>
+    <ROW Action="AI_RemoveExternalUIStub" Condition="(REMOVE=&quot;ALL&quot;) AND ((VersionNT &gt; 500) OR((VersionNT = 500) AND (ServicePackLevel &gt;= 4)))" Sequence="1501"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_AppSearchEx" Sequence="103"/>
+    <ROW Action="AI_DetectSoftware" Sequence="102"/>
+    <ROW Action="AI_DownloadPrereq" Sequence="1297"/>
+    <ROW Action="AI_ExtractPrereq" Sequence="1298"/>
+    <ROW Action="AI_InstallPrerequisite" Sequence="1299"/>
+    <ROW Action="AI_InstallPostPrerequisite" Sequence="1301"/>
+    <ROW Action="AI_CleanPrereq" Sequence="1302"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
+    <ROW Action="InstallDlg" Condition="AI_INSTALL" Sequence="1230" SeqType="3" MsiKey="WelcomeDlg"/>
+    <ROW Action="MaintenanceTypeDlg" Condition="AI_MAINT" Sequence="1250" SeqType="3" MsiKey="MaintenanceTypeDlg"/>
+    <ROW Action="AI_ChooseTextStyles" Sequence="74"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="AI_DETECTED_ADMIN_USER" Description="[ProductName] requires installation by an Admin user account." DescriptionLocId="AI.LaunchCondition.Admin.User" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="AI_DETECTED_INTERNET_CONNECTION" Description="[ProductName] requires an active Internet connection for installation. Please check your network configuration and proxy settings." DescriptionLocId="AI.LaunchCondition.Internet" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="SETUPEXEDIR OR (REMOVE=&quot;ALL&quot;)" Description="This package can only be run from a bootstrapper." DescriptionLocId="AI.LaunchCondition.RequireBootstrapper" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiListBoxComponent">
+    <ROW Property="COMPONENT_LIST" Order="1" Value="AWSCLI" Text="AWS-CLI v2"/>
+    <ROW Property="COMPONENT_LIST" Order="3" Value="PSTOOLS" Text="AWS PowerShell Tools"/>
+    <ROW Property="COMPONENT_LIST" Order="4" Value="SCOUT_SUITE" Text="Scout Suite"/>
+    <ROW Property="COMPONENT_LIST" Order="5" Value="C7N" Text="Cloud Custdian"/>
+    <ROW Property="COMPONENT_LIST" Order="6" Value="AWS_SHELL" Text="AWS Shell"/>
+    <ROW Property="COMPONENT_LIST" Order="7" Value="SAWS" Text="Saws"/>
+    <ROW Property="COMPONENT_LIST" Order="8" Value="ATHENA_CLI" Text="Athena CLI"/>
+    <ROW Property="COMPONENT_LIST" Order="9" Value="JUNGLE" Text="Jungle"/>
+    <ROW Property="COMPONENT_LIST" Order="10" Value="SCEPTRE" Text="Sceptre"/>
+    <ROW Property="COMPONENT_LIST" Order="11" Value="AWS_LOGS" Text="AWS Logs"/>
+    <ROW Property="COMPONENT_LIST" Order="2" Value="PYTHON38" Text="Python 3.8"/>
+    <ROW Property="COMPONENT_LIST" Order="12" Value="S3BROWSER" Text="S3 Browser"/>
+    <ROW Property="COMPONENT_LIST" Order="13" Value="GIMEL" Text="gimel"/>
+    <ROW Property="COMPONENT_LIST" Order="14" Value="KAPPA" Text="kappa"/>
+    <ROW Property="COMPONENT_LIST" Order="15" Value="REDSHIFT_CONSOLE" Text="Redshift Console"/>
+    <ROW Property="COMPONENT_LIST" Order="16" Value="S4CMD" Text="s4cmd"/>
+    <ROW Property="COMPONENT_LIST" Order="17" Value="YAS3FS" Text="yas3fs"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_EXE_PATH_CU" Root="1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_LM" Root="2" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
+    <ROW Registry="Comments" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Comments" Value="[ARPCOMMENTS]" Component_="AI_CustomARPName"/>
+    <ROW Registry="Contact" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Contact" Value="[ARPCONTACT]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayIcon" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayIcon" Value="[ARP_ICON_PATH]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayName" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayName" Value="[AI_PRODUCTNAME_ARP]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayVersion" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayVersion" Value="[ProductVersion]" Component_="AI_CustomARPName"/>
+    <ROW Registry="EstimatedSize" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="EstimatedSize" Value="#[AI_ARP_SIZE]" Component_="AI_CustomARPName"/>
+    <ROW Registry="HelpLink" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="HelpLink" Value="[ARPHELPLINK]" Component_="AI_CustomARPName"/>
+    <ROW Registry="HelpTelephone" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="HelpTelephone" Value="[ARPHELPTELEPHONE]" Component_="AI_CustomARPName"/>
+    <ROW Registry="InstallLocation" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="InstallLocation" Value="[APPDIR]" Component_="AI_CustomARPName"/>
+    <ROW Registry="ModifyPath" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="ModifyPath" Value="[AI_UNINSTALLER] /i [ProductCode] AI_UNINSTALLER_CTP=1" Component_="AI_CustomARPName"/>
+    <ROW Registry="NoRepair" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="NoRepair" Value="#1" Component_="AI_CustomARPName"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Publisher" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Publisher" Value="[Manufacturer]" Component_="AI_CustomARPName"/>
+    <ROW Registry="Readme" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Readme" Value="[ARPREADME]" Component_="AI_CustomARPName"/>
+    <ROW Registry="RequiredApplication_1" Root="-1" Key="Software\Caphyon\Advanced Installer\Prereqs\[ProductCode]\[ProductVersion]" Name="RequiredApplication_1" Value="1" Component_="RequiredApplication_1"/>
+    <ROW Registry="RequiredApplication_2" Root="-1" Key="Software\Caphyon\Advanced Installer\Prereqs\[ProductCode]\[ProductVersion]" Name="RequiredApplication_2" Value="1" Component_="RequiredApplication_2"/>
+    <ROW Registry="URLInfoAbout" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="URLInfoAbout" Value="[ARPURLINFOABOUT]" Component_="AI_CustomARPName"/>
+    <ROW Registry="URLUpdateInfo" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="URLUpdateInfo" Value="[ARPURLUPDATEINFO]" Component_="AI_CustomARPName"/>
+    <ROW Registry="UninstallPath" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="UninstallPath" Value="[AI_UNINSTALLER] /x [ProductCode] AI_UNINSTALLER_CTP=1" Component_="AI_CustomARPName"/>
+    <ROW Registry="UninstallString" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="UninstallString" Value="[AI_UNINSTALLER] /x [ProductCode] AI_UNINSTALLER_CTP=1" Component_="AI_CustomARPName"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+    <ROW Registry="VersionMajor" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="VersionMajor" Value="#1" Component_="AI_CustomARPName"/>
+    <ROW Registry="VersionMinor" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="VersionMinor" Value="#0" Component_="AI_CustomARPName"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="surface"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="RequiredApplication" DisplayName="AWS CLI 2" SetupFileUrl="https://awscli.amazonaws.com/AWSCLIV2.msi" Location="1" ExactSize="0" Operator="1" ComLine="/q" BasicUiComLine="/q" NoUiComLine="/q" Options="iy"/>
+    <ROW PrereqKey="RequiredApplication_1" DisplayName="Python 3.8.4" SetupFileUrl="https://www.python.org/ftp/python/3.8.4/python-3.8.4-amd64.exe" Location="1" ExactSize="0" Operator="1" ComLine="/quiet" BasicUiComLine="/quiet" NoUiComLine="/quiet" Options="fi" Feature="RequiredApplication_1"/>
+    <ROW PrereqKey="RequiredApplication_2" DisplayName="S3 Browser" SetupFileUrl="https://netsdk.s3.amazonaws.com/s3browser/8.9.7/s3browser-8-9-7.exe" Location="1" ExactSize="0" Operator="1" ComLine="/SILENT" BasicUiComLine="/SILENT" NoUiComLine="/SILENT" Options="fi" Feature="RequiredApplication_2"/>
+    <ATTRIBUTE name="PrereqsOrder" value="RequiredApplication RequiredApplication_2 RequiredApplication_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="SystemFolderfile.dll" Prereq="RequiredApplication" SearchType="0" SearchString="[SystemFolder]file.dll" VerMin="1.0" Order="1" Property="PreReqSearch"/>
+    <ROW SearchKey="SystemFolderfile.dll_1" Prereq="RequiredApplication_1" SearchType="0" SearchString="[SystemFolder]file.dll" VerMin="1.0" Order="1" Property="PreReqSearch_1"/>
+    <ROW SearchKey="SystemFolderfile.dll_2" Prereq="RequiredApplication_2" SearchType="0" SearchString="[SystemFolder]file.dll" VerMin="1.0" Order="1" Property="PreReqSearch_2"/>
+  </COMPONENT>
+</DOCUMENT>
