@@ -24,6 +24,10 @@ If you want to add more tools there are 2 options:
 * s4cmd
 * Yas3fs
 
+## License
+The Bundle released under MIT License. Each package in the bundle is released under different License.
+
+## Download
 Download binary exe in Releases or click [Download Now](https://github.com/aws-bundle/AWS-Bundle-Pack/releases/download/1.0.0/AWS-Bundle-1.0.0.exe)
 
 
