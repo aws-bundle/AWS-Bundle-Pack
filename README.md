@@ -1,6 +1,5 @@
-# AWS-Bundle-Pack
+# AWS Bundle Pack ![](https://img.shields.io/static/v1?label=AWS&message=BUNDLE%20PACK&color=orange&logo=amazon&style=for-the-badge&)
 All what you need in one place. Install AWS CLI &amp; many tools, SDKs &amp; Libs in one bundle.
-
 The setup is built with Advanced Installer, the project file is in the repository.
 If you want to add more tools there are 2 options:
 * If you have Advanced Installer (v17) - you can edit the project file and send Pull Request.
@@ -26,3 +25,7 @@ If you want to add more tools there are 2 options:
 * Yas3fs
 
 Download binary exe in Releases or click [Download Now](https://github.com/aws-bundle/AWS-Bundle-Pack/releases/download/1.0.0/AWS-Bundle-1.0.0.exe)
+
+
+[![Github All Releases](https://img.shields.io/github/downloads/aws-bundle/AWS-Bundle-Pack/total.svg?style=for-the-badge)]()
+
