@@ -19,19 +19,22 @@
     <ROW Property="AI_UNINSTALLER" Value="msiexec.exe"/>
     <ROW Property="ALLUSERS" Value="1"/>
     <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPHELPLINK" Value="https://github.com/aws-bundle/AWS-Bundle-Pack"/>
     <ROW Property="ARPNOREPAIR" Value="1" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="ARPPRODUCTICON" Value="awsappicon.exe" Type="8"/>
     <ROW Property="ARPSYSTEMCOMPONENT" Value="1"/>
+    <ROW Property="ARPURLINFOABOUT" Value="https://github.com/aws-bundle/AWS-Bundle-Pack"/>
     <ROW Property="AiFeatIcoMainFeature" Value="awsappicon.exe" Type="8"/>
     <ROW Property="AiPreferFastOem" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="COMPONENT_LIST" Value="AWSCLI,PSTOOLS,SCOUT_SUITE,C7N,AWS_SHELL,SAWS,ATHENA_CLI,JUNGLE,SCEPTRE,AWS_LOGS,PYTHON38,S3BROWSER,GIMEL,KAPPA,REDSHIFT_CONSOLE,S4CMD,YAS3FS"/>
     <ROW Property="Manufacturer" Value="Bundle Pack"/>
-    <ROW Property="ProductCode" Value="1033:{C48AB097-1B1E-4741-9C03-B304809FC3D6} " Type="16"/>
+    <ROW Property="PIP3_PATH" Options="1" Comments="Path to pip3"/>
+    <ROW Property="ProductCode" Value="1033:{0BFCD7D0-000B-4219-B763-0845E3CADEA3} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="AWS Bundle Pack"/>
-    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="ProductVersion" Value="1.0.1" Type="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
-    <ROW Property="UpgradeCode" Value="{31CEE8AC-EB81-4603-B5DF-D1426D7A364B}"/>
+    <ROW Property="UpgradeCode" Value="{3A4FD123-1EF9-498F-ADDF-0CC2D1187258}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
     <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
     <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
@@ -47,7 +50,7 @@
     <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
-    <ROW Component="AI_CustomARPName" ComponentId="{76C947ED-F9F6-4D12-9133-C98238552026}" Directory_="APPDIR" Attributes="4" KeyPath="DisplayName" Options="1"/>
+    <ROW Component="AI_CustomARPName" ComponentId="{FA9F3706-B7E0-4DC7-B70C-55C3502573A9}" Directory_="APPDIR" Attributes="4" KeyPath="DisplayName" Options="1"/>
     <ROW Component="AI_ExePath" ComponentId="{E3276F04-681E-452A-8F4E-1B26E8C560B7}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
     <ROW Component="APPDIR" ComponentId="{F5A2FF0E-2E2E-4810-8F8B-D1A23F611B9A}" Directory_="APPDIR" Attributes="0"/>
     <ROW Component="ProductInformation" ComponentId="{8BE6DCB4-B4C5-489B-AF15-9E077303D29D}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
@@ -229,6 +232,7 @@
     <ROW Action="AI_ConfigureChainer" Type="1" Source="Prereq.dll" Target="ConfigurePrereqLauncher"/>
     <ROW Action="AI_DATA_SETTER" Type="51" Source="AI_ExtractFiles" Target="[AI_SETUPEXEPATH]"/>
     <ROW Action="AI_DATA_SETTER_1" Type="51" Source="AWSTools" Target="AEkAcwA2ADQAQgBpAHQAAgABAEkAcwBGAGEAbABsAGIAYQBjAGsAMwAyAEIAaQB0AAIAAQBQAGEAcgBhAG0AcwACAAEAUwBjAHIAaQBwAHQAAgAjACAAQgBsAG8AYwBrACAAZgBvAHIAIABkAGUAYwBsAGEAcgBpAG4AZwAgAHQAaABlACAAcwBjAHIAaQBwAHQAIABwAGEAcgBhAG0AZQB0AGUAcgBzAC4ADQAKAFAAYQByAGEAbQAoACkADQAKAA0ACgAjACAAWQBvAHUAcgAgAGMAbwBkAGUAIABnAG8AZQBzACAAaABlAHIAZQAuAA0ACgANAAoASQBuAHMAdABhAGwAbAAtAFAAYQBjAGsAYQBnAGUAUAByAG8AdgBpAGQAZQByACAATgB1AEcAZQB0ACAALQBGAG8AcgBjAGUAOwANAAoASQBuAHMAdABhAGwAbAAtAE0AbwBkAHUAbABlACAALQBOAGEAbQBlACAAQQBXAFMALgBUAG8AbwBsAHMALgBJAG4AcwB0AGEAbABsAGUAcgAgAC0ARgBvAHIAYwBlADsADQAKAEkAbgBzAHQAYQBsAGwALQBBAFcAUwBUAG8AbwBsAHMATQBvAGQAdQBsAGUAIABBAFcAUwAuAFQAbwBvAGwAcwAuAFMAMwAsAEEAVwBTAC4AVABvAG8AbABzAC4ARQBDADIALABBAFcAUwAuAFQAbwBvAGwAcwAuAFMAaQBtAHAAbABlAFMAeQBzAHQAZQBtAHMATQBhAG4AYQBnAGUAbQBlAG4AdAAsAEEAVwBTAC4AVABvAG8AbABzAC4AUwBlAGMAcgBlAHQAcwBNAGEAbgBhAGcAZQByACwAQQBXAFMALgBUAG8AbwBsAHMALgBTAGUAYwB1AHIAaQB0AHkAVABvAGsAZQBuACwAQQBXAFMALgBUAG8AbwBsAHMALgBDAGwAbwB1AGQARgBvAHIAbQBhAHQAaQBvAG4ALABBAFcAUwAuAFQAbwBvAGwAcwAuAEMAbwBnAG4AaQB0AG8ASQBkAGUAbgB0AGkAdAB5AFAAcgBvAHYAaQBkAGUAcgAsAEEAVwBTAC4AVABvAG8AbABzAC4ARQBsAGEAcwB0AGkAYwBzAGUAYQByAGMAaAAsAEEAVwBTAC4AVABvAG8AbABzAC4ASQBkAGUAbgB0AGkAdAB5AE0AYQBuAGEAZwBlAG0AZQBuAHQALABBAFcAUwAuAFQAbwBvAGwAcwAuAEEAdQB0AG8AUwBjAGEAbABpAG4AZwAsAEEAVwBTAC4AVABvAG8AbABzAC4ATABhAG0AYgBkAGEALABBAFcAUwAuAFQAbwBvAGwAcwAuAFIAbwB1AHQAZQA1ADMALABBAFcAUwAuAFQAbwBvAGwAcwAuAEUAQwBSACwAQQBXAFMALgBUAG8AbwBsAHMALgBFAGwAYQBzAHQAaQBjAEwAbwBhAGQAQgBhAGwAYQBuAGMAaQBuAGcAVgAyACwAQQBXAFMALgBUAG8AbwBsAHMALgBSAEQAUwAsAEEAVwBTAC4AVABvAG8AbABzAC4ARQBDAFMALABBAFcAUwAuAFQAbwBvAGwAcwAuAFMAUQBTACAALQBDAGwAZQBhAG4AVQBwACAALQBGAG8AcgBjAGUAOw=="/>
+    <ROW Action="AI_DATA_SETTER_2" Type="51" Source="CustomActionData" Target="AEkAcwA2ADQAQgBpAHQAAgABAEkAcwBGAGEAbABsAGIAYQBjAGsAMwAyAEIAaQB0AAIAAQBQAGEAcgBhAG0AcwACAAEAUwBjAHIAaQBwAHQAAgAjACAAQgBsAG8AYwBrACAAZgBvAHIAIABkAGUAYwBsAGEAcgBpAG4AZwAgAHQAaABlACAAcwBjAHIAaQBwAHQAIABwAGEAcgBhAG0AZQB0AGUAcgBzAC4ADQAKAFAAYQByAGEAbQAoACkADQAKAA0ACgAjACAAWQBvAHUAcgAgAGMAbwBkAGUAIABnAG8AZQBzACAAaABlAHIAZQAuAA0ACgANAAoAJABwAGkAcAAzACAAPQAgAEcAZQB0AC0AQwBoAGkAbABkAEkAdABlAG0AIABDADoAXAAgAC0ARgBpAGwAdABlAHIAIABwAGkAcAAzAC4AZQB4AGUAIAAtAFIAZQBjAHUAcgBzAGUAIAAtAEUAcgByAG8AcgBBAGMAdABpAG8AbgAgAFMAaQBsAGUAbgB0AGwAeQBDAG8AbgB0AGkAbgB1AGUAIAB8ACAAJQAgAFsAXAB7AF0AIAAkAF8ALgBGAHUAbABsAE4AYQBtAGUAIABbAFwAfQBdAA0ACgBBAEkAXwBTAGUAdABNAHMAaQBQAHIAbwBwAGUAcgB0AHkAIABQAEkAUAAzAF8AUABBAFQASAAgACQAcABpAHAAMwANAAo="/>
     <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
     <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
     <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
@@ -260,19 +264,20 @@
     <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
     <ROW Action="AI_VerifyPrereq" Type="1" Source="Prereq.dll" Target="VerifyPrereq"/>
     <ROW Action="AWSTools" Type="3649" Source="PowerShellScriptLauncher.dll" Target="RunPowerShellScript" Options="1" AdditionalSeq="AI_DATA_SETTER_1"/>
-    <ROW Action="Pip_athenacli" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install athenacli" Options="1"/>
-    <ROW Action="Pip_aws_shell" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install aws-shell" Options="1"/>
-    <ROW Action="Pip_awslogs" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install awslogs" Options="1"/>
-    <ROW Action="Pip_cloud_custodian" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install c7n" Options="1"/>
-    <ROW Action="Pip_gimel" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install gimel" Options="1"/>
-    <ROW Action="Pip_jungle" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install jungle" Options="1"/>
-    <ROW Action="Pip_kappa" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install kappa" Options="1"/>
-    <ROW Action="Pip_redshift_console" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install redshift-console" Options="1"/>
-    <ROW Action="Pip_s4cmd" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install s4cmd" Options="1"/>
-    <ROW Action="Pip_saws" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install saws" Options="1"/>
-    <ROW Action="Pip_sceptre" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install sceptre" Options="1"/>
-    <ROW Action="Pip_scoutsuite" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install scoutsuite" Options="1"/>
-    <ROW Action="Pip_yas3fs" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow C:\Python38\Scripts\pip.exe install yas3fs" Options="1"/>
+    <ROW Action="Pip_athenacli" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow &quot;[PIP3_PATH]&quot; install athenacli" Options="1"/>
+    <ROW Action="Pip_aws_shell" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow &quot;[PIP3_PATH]&quot; install aws-shell" Options="1"/>
+    <ROW Action="Pip_awslogs" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow &quot;[PIP3_PATH]&quot; install awslogs" Options="1"/>
+    <ROW Action="Pip_cloud_custodian" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow &quot;[PIP3_PATH]&quot; install c7n" Options="1"/>
+    <ROW Action="Pip_gimel" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow &quot;[PIP3_PATH]&quot; install gimel" Options="1"/>
+    <ROW Action="Pip_jungle" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow &quot;[PIP3_PATH]&quot; install jungle" Options="1"/>
+    <ROW Action="Pip_kappa" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow &quot;[PIP3_PATH]&quot; install kappa" Options="1"/>
+    <ROW Action="Pip_redshift_console" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow &quot;[PIP3_PATH]&quot; install redshift-console" Options="1"/>
+    <ROW Action="Pip_s4cmd" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow &quot;[PIP3_PATH]&quot; install s4cmd" Options="1"/>
+    <ROW Action="Pip_saws" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow &quot;[PIP3_PATH]&quot; install saws" Options="1"/>
+    <ROW Action="Pip_sceptre" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow &quot;[PIP3_PATH]&quot; install sceptre" Options="1"/>
+    <ROW Action="Pip_scoutsuite" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow &quot;[PIP3_PATH]&quot; install scoutsuite" Options="1"/>
+    <ROW Action="Pip_yas3fs" Type="1602" Source="viewer.exe" Target="/EnforcedRunAsAdmin /HideWindow &quot;[PIP3_PATH]&quot; install yas3fs" Options="1"/>
+    <ROW Action="PowerShellScriptInline" Type="65" Source="PowerShellScriptLauncher.dll" Target="RunPowerShellScript" Options="1" AdditionalSeq="AI_DATA_SETTER_2"/>
     <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
     <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
     <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
@@ -315,23 +320,25 @@
     <ROW Action="AI_ExtractFiles" Sequence="3998" Builds="DefaultBuild"/>
     <ROW Action="AI_DATA_SETTER" Sequence="3997"/>
     <ROW Action="AI_EstimateExtractFiles" Sequence="3999" Builds="DefaultBuild"/>
-    <ROW Action="AWSTools" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;PSTOOLS&quot; )" Sequence="6402"/>
-    <ROW Action="AI_DATA_SETTER_1" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;PSTOOLS&quot; )" Sequence="6401"/>
-    <ROW Action="Pip_scoutsuite" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;SCOUT_SUITE&quot; )" Sequence="6403"/>
-    <ROW Action="Pip_cloud_custodian" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;C7N&quot; )" Sequence="6404"/>
-    <ROW Action="Pip_aws_shell" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;AWS_SHELL&quot; )" Sequence="6405"/>
-    <ROW Action="Pip_saws" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;SAWS&quot; )" Sequence="6406"/>
-    <ROW Action="Pip_jungle" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;JUNGLE&quot; )" Sequence="6407"/>
-    <ROW Action="Pip_athenacli" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;ATHENA_CLI&quot; )" Sequence="6408"/>
-    <ROW Action="Pip_sceptre" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;SCEPTRE&quot; )" Sequence="6409"/>
-    <ROW Action="Pip_awslogs" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;AWS_LOGS&quot; )" Sequence="6410"/>
-    <ROW Action="Pip_gimel" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;GIMEL&quot; )" Sequence="6411"/>
-    <ROW Action="Pip_kappa" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;KAPPA&quot; )" Sequence="6412"/>
-    <ROW Action="Pip_redshift_console" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;REDSHIFT_CONSOLE&quot; )" Sequence="6413"/>
-    <ROW Action="Pip_s4cmd" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;S4CMD&quot; )" Sequence="6414"/>
-    <ROW Action="Pip_yas3fs" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;YAS3FS&quot; )" Sequence="6415"/>
+    <ROW Action="AWSTools" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;PSTOOLS&quot; )" Sequence="6404"/>
+    <ROW Action="AI_DATA_SETTER_1" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;PSTOOLS&quot; )" Sequence="6403"/>
+    <ROW Action="Pip_scoutsuite" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;SCOUT_SUITE&quot; )" Sequence="6405"/>
+    <ROW Action="Pip_cloud_custodian" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;C7N&quot; )" Sequence="6406"/>
+    <ROW Action="Pip_aws_shell" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;AWS_SHELL&quot; )" Sequence="6407"/>
+    <ROW Action="Pip_saws" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;SAWS&quot; )" Sequence="6408"/>
+    <ROW Action="Pip_jungle" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;JUNGLE&quot; )" Sequence="6409"/>
+    <ROW Action="Pip_athenacli" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;ATHENA_CLI&quot; )" Sequence="6410"/>
+    <ROW Action="Pip_sceptre" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;SCEPTRE&quot; )" Sequence="6411"/>
+    <ROW Action="Pip_awslogs" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;AWS_LOGS&quot; )" Sequence="6412"/>
+    <ROW Action="Pip_gimel" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;GIMEL&quot; )" Sequence="6413"/>
+    <ROW Action="Pip_kappa" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;KAPPA&quot; )" Sequence="6414"/>
+    <ROW Action="Pip_redshift_console" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;REDSHIFT_CONSOLE&quot; )" Sequence="6415"/>
+    <ROW Action="Pip_s4cmd" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;S4CMD&quot; )" Sequence="6416"/>
+    <ROW Action="Pip_yas3fs" Condition="( NOT Installed ) AND ( COMPONENT_LIST &gt;&lt; &quot;YAS3FS&quot; )" Sequence="6417"/>
     <ROW Action="AI_GetArpIconPath" Sequence="1401"/>
     <ROW Action="AI_RemoveExternalUIStub" Condition="(REMOVE=&quot;ALL&quot;) AND ((VersionNT &gt; 500) OR((VersionNT = 500) AND (ServicePackLevel &gt;= 4)))" Sequence="1501"/>
+    <ROW Action="PowerShellScriptInline" Condition="(VersionNT &gt; 501) OR (VersionNT = 501 AND ServicePackLevel &gt;= 2)" Sequence="6402"/>
+    <ROW Action="AI_DATA_SETTER_2" Condition="(VersionNT &gt; 501) OR (VersionNT = 501 AND ServicePackLevel &gt;= 2)" Sequence="6401"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
     <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
