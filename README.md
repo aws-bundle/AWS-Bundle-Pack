@@ -5,6 +5,8 @@ If you want to add more tools there are 2 options:
 * If you have Advanced Installer (v17) - you can edit the project file and send Pull Request.
 * If you don't have - please open a ticket with request. Provide the URL + the steps needed to install.
 
+![](https://i.imgur.com/zDyG8xi.png?1)
+
 ## Included in the bundle
 * AWS CLI v2
 * Python 3.8
